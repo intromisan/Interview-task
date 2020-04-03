@@ -147,13 +147,13 @@ body {
       }
       .issues-submenu.open {
         padding: 3% 0;
-        margin-top: .3rem;
         max-height: 30rem;
       }
       .issues-submenu {
         overflow-y: hidden;
         max-height: 0;
         background-color: #f2f2f2;
+        margin-top: .3rem;
         transition-property: all;
         transition-duration: .5s;
         padding-right: 2%;
@@ -252,6 +252,58 @@ body {
       }
       .quote-close {
         transform: rotate(180deg);
+      }
+    }
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.5);
+    .popup-content {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fefefe;
+      height: 30%;
+      padding: 1rem;
+      border: 1px solid #888;
+      width: 80%;
+      .close-box {
+        border: .2rem solid black;
+        border-radius: 100rem;
+        width: 3rem;
+        height: 3rem;
+        align-self: flex-end;
+        @include center;
+        &:hover {
+          cursor: pointer;
+        }
+        .close {
+          height: 100%;
+          color: #000;
+          font-size: 3.5rem;
+          font-weight: bold;
+          margin-top: -1.9rem;
+        }
+      }
+      p {
+        @include center;
+        height: 100%;
+        width: 60%;
+        margin: -3.5rem auto 0;
+        font-size: 3rem;
+        font-style: italic;
+        text-transform: capitalize;
       }
     }
   }

@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/0dad346ff0.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload ='checkFirstVisit()'>
   <header>
     <div class="page-title">
       <p>100 day returns</p>
@@ -146,6 +146,14 @@
       </div>
     </section>
   </main>
+  <div id="popupWelcome" class="popup">
+    <div class="popup-content">
+      <div class="close-box">
+        <span class="close" id="close">&times;</span>
+      </div>
+      <p>Welcome back!</p>
+    </div>
+  </div>
   <script src='app.js'></script>
 </body>
 </html>
