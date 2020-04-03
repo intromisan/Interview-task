@@ -99,7 +99,8 @@ body header .header-main .logo-container .logo a {
 }
 
 body header .header-main .logo-container .logo a img {
-  height: 55%;
+  height: 3.3rem;
+  width: 3.3rem;
 }
 
 body header .header-main .logo-container .logo a p {
@@ -314,7 +315,7 @@ body main .quotes-container .icon svg {
 
 body main .quotes-container .quote {
   text-align: center;
-  width: 80%;
+  width: 80vw;
   margin: 1rem auto;
   font-size: 1.1rem;
 }
