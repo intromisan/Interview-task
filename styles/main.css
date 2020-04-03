@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .02rem;
+}
+
+html a {
+  text-decoration: none;
+}
+
+body {
+  width: 375px;
+}
+
+body .wrapper {
+  width: 100%;
+  padding: 0 1.5%;
+}
+
+body header {
+  width: 100%;
+  border-bottom: 0.1rem solid #E5E5E5;
+}
+
+body header .page-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000;
+  text-transform: uppercase;
+  color: white;
+  height: 3rem;
+  font-size: .9rem;
+}
+
+body header .header-main {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body header .header-main .menu-container {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .header-main .menu-container div {
+  width: 2rem;
+  height: .1rem;
+  background-color: black;
+  margin: .3rem 0;
+}
+
+body header .header-main .logo-container {
+  width: 40%;
+}
+
+body header .header-main .logo-container .logo {
+  width: 100%;
+  height: 100%;
+}
+
+body header .header-main .logo-container .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+body header .header-main .logo-container .logo a img {
+  height: 55%;
+}
+
+body header .header-main .logo-container .logo a p {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  margin-left: .5rem;
+  color: black;
+  font-weight: 500;
+}
+
+body header .header-main .cart-container {
+  width: 35%;
+}
+
+body header .header-main .cart-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+body header .header-main .cart-container a .fa-shopping-cart {
+  font-size: 2rem;
+  color: black;
+}
+
+body main .help-heading {
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .help-heading h1 {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 0 2%;
+}
+
+body main .sliders-container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #D28281;
+  color: white;
+  padding: 0 1.5%;
+}
+
+body main .sliders-container .slider .icon-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .sliders-container .slider .icon-title .icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #D28281;
+  font-size: 1.4rem;
+}
+
+body main .sliders-container .slider .icon-title .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+body main .sliders-container .slider .arrow-container .icon {
+  font-size: 1.5rem;
+}
+
+body main .sliders-container .issues-submenu {
+  max-height: 30rem;
+  background-color: #f2f2f2;
+  padding: 3% 3% 2%;
+  margin-top: .3rem;
+}
+
+body main .sliders-container .issues-submenu .question-container {
+  height: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+  padding-left: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+body main .sliders-container .issues-submenu .all {
+  height: 1rem;
+}
+
+body main .sliders-container .issues-submenu .all a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
+
+body main .sliders-container .issues-submenu .all a svg {
+  height: 100%;
+  margin-left: .5rem;
+}
+
+body main .faq-container {
+  margin: 3rem 0;
+}
+
+body main .faq-container .faq-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .faq-container .faq-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .faq-container .faq-list li {
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+body main .faq-container .faq-list li a {
+  color: black;
+}
+
+body main .quotes-container svg {
+  height: 3rem;
+}
+/*# sourceMappingURL=main.css.map */
