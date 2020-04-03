@@ -36,7 +36,7 @@ body {
       background-color: #000;
       text-transform: uppercase;
       color: white;
-      height: 4rem;
+      height: 3.5rem;
       font-size: .9rem;
     }
     .header-main {
@@ -209,9 +209,14 @@ body {
           width: 2.5rem;
         }
       }
+      .one {
+        width: 72%;
+      }
+      .two {
+        width: 85%;
+      }
       .quote {
         text-align: center;
-        width: 80vw;
         margin: 1rem auto;
         font-size: 1.1rem;
         .quote-text {

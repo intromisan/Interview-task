@@ -42,7 +42,7 @@ body header .page-title {
   background-color: #000;
   text-transform: uppercase;
   color: white;
-  height: 4rem;
+  height: 3.5rem;
   font-size: .9rem;
 }
 
@@ -313,9 +313,16 @@ body main .quotes-container .icon svg {
   width: 2.5rem;
 }
 
+body main .quotes-container .one {
+  width: 72%;
+}
+
+body main .quotes-container .two {
+  width: 85%;
+}
+
 body main .quotes-container .quote {
   text-align: center;
-  width: 80vw;
   margin: 1rem auto;
   font-size: 1.1rem;
 }
