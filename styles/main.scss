@@ -116,7 +116,6 @@ body {
         background-color: $slider-color;
         color: white;
         padding: 0 1.5%;
-
         .icon-title {
           display: flex;
           .icon {
@@ -139,15 +138,25 @@ body {
         .arrow-container {
           .icon {
             font-size: 1.5rem;
+            transition-duration: .3s;
+          }
+          .icon.open {
+            transform: rotate(180deg);
           }
         }
       }
-      .issues-submenu {
-        max-height: 30rem;
-        background-color: #f2f2f2;
-        padding: 3% 3% 2%;
+      .issues-submenu.open {
+        padding: 3% 0;
         margin-top: .3rem;
-        // margin: 0 auto;
+        max-height: 30rem;
+      }
+      .issues-submenu {
+        overflow-y: hidden;
+        max-height: 0;
+        background-color: #f2f2f2;
+        transition-property: all;
+        transition-duration: .5s;
+        padding-right: 2%;
         .question-container {
           height: 3.5rem;
           display: flex;
