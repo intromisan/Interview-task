@@ -42,7 +42,7 @@ body header .page-title {
   background-color: #000;
   text-transform: uppercase;
   color: white;
-  height: 3rem;
+  height: 4rem;
   font-size: .9rem;
 }
 
@@ -58,7 +58,7 @@ body header .header-main {
 }
 
 body header .header-main .menu-container {
-  width: 20vw;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,7 @@ body header .header-main .menu-container div {
 }
 
 body header .header-main .logo-container {
-  width: 50vw;
+  width: 50%;
 }
 
 body header .header-main .logo-container .logo {
@@ -111,7 +111,7 @@ body header .header-main .logo-container .logo a p {
 }
 
 body header .header-main .cart-container {
-  width: 30vw;
+  width: 30%;
 }
 
 body header .header-main .cart-container a {
