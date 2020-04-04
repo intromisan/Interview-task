@@ -31,7 +31,7 @@ window.addEventListener('click', (event) => {
   }
 });
 
-// Slider animation
+// Bar slider animation
 const issues = document.getElementById('issues');
 const issueSlider = document.getElementById('issueSlider');
 const issueIcon = document.getElementById('issueIcon');
@@ -40,3 +40,16 @@ issues.addEventListener('click', () => {
   issueSlider.classList.toggle('open');
   issueIcon.classList.toggle('open');
 });
+
+//Carousel slider
+
+const firstQuote = document.getElementById('firstQuote');
+const secondQuote = document.getElementById('secondQuote');
+const time = 5000;
+
+const changeQuote = () => {
+  firstQuote.classList.toggle('showing');
+  secondQuote.classList.toggle('showing');
+};
+
+window.onload = setInterval(changeQuote, time);

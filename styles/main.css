@@ -316,68 +316,94 @@ body main .faq-container .faq-list li a {
 
 body main .quotes-container {
   width: 100%;
+  height: 15rem;
   background-color: #FBF2F3;
-  padding: .5rem 0;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body main .quotes-container .icon {
   height: 2.5rem;
-  width: 100%;
+  width: 2.5rem;
 }
 
 body main .quotes-container .icon svg {
   height: 100%;
-  width: 2.5rem;
+  width: 100%;
 }
 
-body main .quotes-container .one {
-  width: 72%;
+body main .quotes-container .quote-close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-body main .quotes-container .two {
-  width: 82%;
+body main .quotes-container .quote-close svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-body main .quotes-container .quote {
+body main .quotes-container .quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .quotes-container .quotes .one {
+  width: 60%;
+}
+
+body main .quotes-container .quotes .two {
+  width: 80%;
+}
+
+body main .quotes-container .quotes .quote {
+  position: absolute;
   text-align: center;
-  margin: 1rem auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-size: 1.1rem;
+  display: none;
 }
 
-body main .quotes-container .quote .quote-text {
+body main .quotes-container .quotes .quote .quote-text {
   font-weight: 300;
   font-style: italic;
   line-height: 1.7;
   margin-bottom: .4rem;
 }
 
-body main .quotes-container .quote .quote-author {
+body main .quotes-container .quotes .quote .quote-author {
   text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-body main .quotes-container .quote .quote-rating {
+body main .quotes-container .quotes .quote .quote-rating {
   color: gold;
   margin-bottom: 0.5rem;
 }
 
-body main .quotes-container .seperator {
-  height: .15rem;
-  width: 80%;
-  background-color: white;
-  margin: 0 auto;
-}
-
-body main .quotes-container .quote-close {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+body main .quotes-container .quotes .quote.showing {
+  display: block;
 }
 
 body .popup {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   left: 0;
   top: 0;
   width: 100%;
@@ -388,6 +414,7 @@ body .popup {
 }
 
 body .popup .popup-content {
+  z-index: 8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
