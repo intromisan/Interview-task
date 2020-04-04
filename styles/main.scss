@@ -284,6 +284,7 @@ body {
         width: 3rem;
         height: 3rem;
         align-self: flex-end;
+        z-index: 1;
         @include center;
         &:hover {
           cursor: pointer;
@@ -299,7 +300,6 @@ body {
       p {
         @include center;
         height: 100%;
-        width: 60%;
         margin: -3.5rem auto 0;
         font-size: 3rem;
         font-style: italic;

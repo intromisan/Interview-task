@@ -414,6 +414,7 @@ body .popup .popup-content .close-box {
   height: 3rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,7 +449,6 @@ body .popup .popup-content p {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 60%;
   margin: -3.5rem auto 0;
   font-size: 3rem;
   font-style: italic;
