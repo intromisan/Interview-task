@@ -9,8 +9,8 @@ const pushPopup = () => {
 
 const checkFirstVisit = () => {
   if (document.cookie.split(';').some((item) => item.includes('test=1'))){
-    if (document.cookie.split(';').some((item) => item.includes('test=1')) && document.cookie.split(';').some((item) => item.includes('enter=2'))){
-      return true
+    if (document.cookie.split(';').some((item) => item.includes('test=1')) && document.cookie.split(';').some((item) => item.includes('enter=1'))){
+      return true;
     } else {
       pushPopup();
     }
@@ -21,13 +21,13 @@ const checkFirstVisit = () => {
 
 btnClose.addEventListener('click', () => {
   popup.style.display = "none";
-  document.cookie = 'enter=2';
+  document.cookie = 'enter=1';
 });
 
 window.addEventListener('click', (event) => {
   if (event.target == popup) {
     popup.style.display = "none";
-    document.cookie = 'enter=2';
+    document.cookie = 'enter=1';
   }
 });
 
@@ -52,4 +52,4 @@ const changeQuote = () => {
   secondQuote.classList.toggle('showing');
 };
 
-window.onload = setInterval(changeQuote, time);
+// window.onload = setInterval(changeQuote, time);
